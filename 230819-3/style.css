@@ -1,0 +1,35 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*
+스페이스( ): 자손 선택자 - 하위선택자
+자식 뿐 아니라 자손 모두 해당
+
+꺽쇠(>): 자식선택자
+바로 아래의 선택자가 자식선택자에 해당
+
+콤마(,): 연결선택자(그룹선택자)
+선택자가 두 개 이상일 때 연결 시 해당
+*/
+
+div span {
+    color: red;
+}
+
+/* 클래스가 우선순위가 더 높음*/
+.start span {
+    color: blue;
+}
+
+/* 자식선택자가 순위가 더 높음*/
+.start > span {
+    color: pink;
+}
+
+.start div p,
+.end {
+    color: violet;
+    font-size: 2em;
+    text-transform: uppercase;
+}

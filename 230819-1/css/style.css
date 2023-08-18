@@ -1,0 +1,13 @@
+.title {
+    font-size:xx-large;
+    color: red;
+    box-sizing: border-box;
+    /* 이게 주석이지롱*/
+    background-color: aqua;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    float: right;
+    margin-top: 100px;
+    width: 100px;
+}

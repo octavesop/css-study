@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+    width: 1200px;
+}
+
+header {
+    height: 100px;
+}
+
+/*
+.about {
+    border: 5px solid blue;
+}
+*/
+
+/*
+section 태그 중 about이라는 class를 가지고 있는 경우만
+모든 걸 다 태그와 함께 사용할 필요는 없지만 이렇게 하면 범용적인 경우에 직관적임
+*/
+section.about {
+    border: 5px solid aqua;
+}

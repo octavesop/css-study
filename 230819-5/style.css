@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    /* 모든 선택자의 기본 세팅 margin과 padding 설정이 사라진다. not BP*/
+    /* 보통 body 보다 위에 둔다. */
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+    /* 이렇게 하면 input의 폰트 설정도 시스템 설정을 따르지 않게 됨 */
+    font-family: 'Noto Sans KR', sans-serif;
+
+    /*
+    최초에 정한 너비/두께와 상관없이 width 안으로 포함시킴.
+    즉 width 안으로 border가 들어감.
+    일반적인 border는 바깥쪽으로 나가지만 이 경우 width 안쪽으로 border가 생김
+    */
+    box-sizing: border-box;
+
+    /*
+    input 태그 선택시 아웃라인이 두꺼워지는 현상은 자주 쓰이지 않아서 해줌
+    외의 글로벌 선택자 선택은 가급적 넣지 않는 것을 추천
+    */
+    outline: none;
+}
+
+.frame {
+    /*
+    실제 프레임에는 좌/우 각각의 1px 때문에 실제로는 298px만 들어갈 수 있음
+    */
+    /*
+    border: 1px solid #000000;
+    */
+    width: 300px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.frame div {
+    /*
+    이렇게 될 경우 각 div의 좌-우 각각의 1px 때문에 3개가 합쳐 306px이 되므로
+    frame 클래스의 width를 넘어 한 줄 안에 3개의 div가 들어가지 않게 됨
+    */
+    border: 5px solid red;
+    float: left;
+    height: 100px;
+    width: 100px;
+
+
+
+
+}
+
+
