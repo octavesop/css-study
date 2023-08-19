@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+section.about {
+    background-color: crimson;
+    color: #ffffff;
+    padding: 25px;
+}
+
+/* meta tag가 있어야만 media query가 작동한다! */
+@media(max-width: 768px) {
+    /* pc 버전에서 작성한 selector 방식이 media query 부분과 맞아야 됨 */
+    section.about {
+        background-color: yellowgreen;
+        color: #000000;
+    }
+}

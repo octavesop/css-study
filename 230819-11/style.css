@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.login {
+    border: 1px solid #000000;
+    width: 400px;
+    padding: 15px;
+}
+
+/*
+
+속성 선택자 기본 형식 => css attribute라고 검색하면 잘 나온답니다
+속성: property, attribute => :before, :after ... attr()
+
+선택자[{속성명}="값"] {...}
+
+*[{속성명}="값"] {} <= 도 가능, "" 아니고 ''여도 되고 아예 없어도 됨
+
+*/
+
+.login label {
+    display: block;
+    text-align: center;
+}
+
+/*
+.login > input {
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid #000000;
+    padding: 5px;
+    border-radius: 5px;
+}
+*/
+
+/*
+.login input[type=text],
+.login input[type=email],
+.login input[type=password],
+.login input[type=submit] {
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid #000000;
+    padding: 5px;
+    border-radius: 5px;
+}
+*/
+
+/* 이 경우에도 속성 선택자이므로 동일하게 동작함 */
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid #dddddd;
+    padding: 5px;
+    border-radius: 5px;
+    padding-left: 35px;
+    background-repeat: no-repeat;
+    background-position: center left 5px;
+}
+
+
+/*
+button tag는 html5에서 나온거라 가상클래스 가능함
+input 태그는 불가능함
+*/
+.login button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.login input[type=text] {
+    background-image: url(images/user.png);
+    background-size: 21px;
+    color: red;
+}
+
+.login input[type=email] {
+    background-image: url(images/email.png);
+    background-size: 22px;
+    color: blue;
+}
+
+.login input[type=password] {
+    background-image: url(images/padlock.png);
+    background-size: 23px;
+    color: blue;
+}
+

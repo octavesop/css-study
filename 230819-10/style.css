@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*
+
+:checked 가상 클래스
+
+*/
+
+/* tild 쓰면 아래쪽으로 선택자가 적용됨(중학생이면 초등학생은 선택 안됨 등)*/
+input[type=radio]:checked + span {
+    color: red;
+    font-weight: bold;
+}

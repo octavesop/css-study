@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #cccccc;
+}
+
+/*
+!important > inline > id > class > tag selector
+!important는 일관성을 해치므로 가급적 사용하지 않는 게 좋음
+그 외 선언 우선순위는 인라인 > 내부 스타일시트 > 외부 스타일시트 순임
+*/
+h1 {
+    color: red !important;
+}
+
+.blue-text {
+    color: blue;
+}
+
+#green-text {
+    color: green;
+}

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*
+인접 선택자: + 사용 / 무조건 현재 태그의 아래쪽만 참조할 수 있음
+
+형제 선택자: ~ 사용(tild라고 한답니다) / 같은 들여쓰기만 참조 가능
+*/
+
+ul + p {
+    color: red;
+}
+
+ul ~ div p {
+    color: blue;
+}
+
+ul ~ div p + div {
+    color: blueviolet;
+}
