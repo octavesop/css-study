@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/*
+
+z-index가 같은 경우 relative보다 absolute가 우선됨.
+z-index가 같은 경우 2개의 absolute가 있을 때 html에서 먼저 나온 태그가 우선됨.
+position 속성이 없으면 z-index 사용 불가능함
+
+*/
+
+div[class*=box] {
+    width: 200px;
+    height: 200px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 200px;
+    position: absolute;
+}
+
+.box1 {
+    background-color: crimson;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.box2 {
+    background-color: darkblue;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.box3 {
+    background-color: hotpink;
+    top: 100px;
+    left: 100px;
+    z-index: -3;
+}
+
+
