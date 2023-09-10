@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*
+
+## POSITION - static, relative, absolute, fixed, sticky
+
+default 값은 static으로 되어있다!
+
+1. relative => 부모 요소에 준다
+2. absolute => 자식 요소에 준다
+3. 포지션 속성이 없으면 left, right, top, bottom, z-index를 쓸 수 없음
+   (static에서는 동작하지 않음!)
+
+- static(default): position 속성이 없음
+- absolute: 요소가 절대적인 위치에 배치
+- relative: 요소가 상대적인 위치에 배치
+- fixed: 최초의 좌표에 고정됨
+- sticky: 스크롤 된 후 좌표로 고정됨
+
+*/
+
+.items div {
+    border: 1px solid #000000;
+    width: 200px;
+    height: 200px;
+}
+
+.item1 {
+    position: static;
+}
+
+.item2 {
+    /* 부모 요소 관계를 맺을 때, 좌표, z-index를 사용해야 하는 경우 */
+    background-color: cadetblue;
+    position: relative;
+    /*
+    right의 기준이 없으므로 움직이지 않음
+    right: 0;
+    */
+    left: 100px;
+    top: 100px;
+}
+
+.item3 {
+    background-color: crimson;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

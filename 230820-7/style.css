@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    /* 상자를 가운데로 맞춥시다... */
+    /*  transform: translateX(-50px); */
+    transform: translateX(-50%);
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

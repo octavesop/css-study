@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.parent img {
+    border: 1px solid red;
+    height: 200px;
+    width: 200px;
+    float: left;
+     /* display: inline-block; */
+
+    /* float은 margin X, inline-block은 margin 5px 정도 있음*/
+}

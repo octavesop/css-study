@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.frame {
+    border: 1px solid #000000;
+    width: 800px;
+}
+
+/*
+float를 쓰면 인접한 요소가 float 속성을 상속받는다!
+*/
+.frame img {
+    float: left;
+}
+
+.frame p {
+    /*
+    이렇게 하면 p 고유의 속성으로 다시 돌아온다...
+    */
+    clear: both;
+}

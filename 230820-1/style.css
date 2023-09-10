@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*
+
+- HTML 엘리먼트는 기본이 왼쪽 정렬이지만 float는 none이다.
+- float 속성이 적용되면 모든 요소의 display 속성이 inline-block이 된다.
+- 배치는 inline 방식이나 block과 같이 width, height 지정이 가능하다는 점~
+
+*/
+
+.parent {
+    border: 5px solid #000000;
+    width: 800px;
+    box-sizing: content-box;
+}
+
+.parent div {
+    border: 5px solid red;
+    width: 100px;
+    height: 100px;
+}
+
+.child:nth-child(1) {
+    float: left;
+}
+
+.child:nth-child(2) {
+    margin: auto;
+}
+
+.child:nth-child(3) {
+    float: right;
+    margin-top: -100px; /* ㅋㅋ */
+}

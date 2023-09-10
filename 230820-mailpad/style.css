@@ -1,0 +1,75 @@
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+body div {
+    width: 600px;
+    margin: auto;
+}
+
+h3 {
+    margin: 0;
+}
+
+
+section {
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+img {
+    padding-left: 164px;
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 10px;
+}
+
+header {
+    background-color: #dddddd;
+    padding: 20px;
+}
+
+h1 {
+    width: 140px;
+    margin: auto;
+}
+
+section h1 {
+    font-size: xx-large;
+}
+
+
+
+.code {
+    padding: 0px;
+    height: 150px;
+}
+
+.code * {
+    text-align: center;
+}
+
+.auth-code {
+    margin-bottom: 2px;
+    font-weight: 900;
+}
+
+.due {
+    font-size: x-small;
+    margin-top: 2px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #aaaaaa;
+}
