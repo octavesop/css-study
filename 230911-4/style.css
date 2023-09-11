@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/*
+    1. 일반적으로 인라인 요소가 블럭 요소를 감싸서는 안 된다.
+    2. div를 제외한 블럭 요소 내에 블럭 요소가 들어가서는 안 된다.
+    3. 가급적 <br> 태그 대신 display 속성을 사용해보자~~
+*/

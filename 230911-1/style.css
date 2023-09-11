@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/*
+
+inline 요소 - span, a, small 등등
+- 글자를 개별적으로 꾸미는 서식에 관련한 태그들
+- 한 줄에 여러 개, 크기 가질 수 없음. 상하 마진 불가능
+
+block 요소 - div, p, table, ul, ol, li...
+- 레이아웃과 관련한 태그, 목록, 제목과 같은 시멘틱 태그.
+- 기본 너비값 100%, 한 줄에 하나만 배치됨. 너비, 높이를 가질 수 있음.
+- 상하 마진 가질 수 있음.
+
+inline block 요소 - img, input, textarea, select 등등
+- 기본 너비값 = 콘텐츠의 너비 값
+- 한 줄에 여러 개 배치, 크기값 가질 수 있음.
+- 상하좌우 마진 가질 수 있음
+
+상하 마진은 겹치는 경우 큰 쪽이 우선됨.
+마진 겹침 현상이라고 함.
+
+*/
+
+span {
+    border: 1px solid #000000;
+    width: 300px;
+    height: 100px;
+    margin: 30px;
+}
+
+div {
+    border: 1px solid #000000;
+    width: 300px;
+    height: 100px;
+    margin: 30px;
+}
+
+button {
+    width: 300px;
+    height: 100px;
+    margin: 30px;
+}

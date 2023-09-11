@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+ul li {
+    border: 1px solid #000000;
+    float: left;
+    /* float 속성을 주면 inline-block 속성으로 변한다. */
+    width: 150px;
+}
+
+hr {
+    margin: 50px;
+    /*
+    float 속성을 상속받으므로 해소시켜야 ul 위로 안 붙음
+    float 속성의 경우 margin이 없는 inline-block 속성이 됨
+    */
+    clear: both;
+}
+
+div {
+    overflow: hidden;
+}
+
+div a {
+    border: 1px solid #000000;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    /* 이렇게 땡길수도 있음~ */
+    margin-right: -5px;
+}
