@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/*
+
+    margin:auto로 요소를 중앙 정렬할 때 블록 요소만 가능.
+    inline / inline-block 요소는 margin: auto 작용하지 않음.
+
+    그러므로 inline / inline-block 요소를 중앙 정렬하려면
+    text-align:center로 제어할 것.
+
+*/
+
+div {
+    border: 1px solid #000;
+    width: 500px;
+    margin: auto;
+}
+
+span {
+    border: 1px solid #000;
+    margin: auto;
+}
+
+button {
+    border: 1px solid #000;
+    margin: auto;
+}

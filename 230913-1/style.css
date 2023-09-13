@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.parent div {
+    border: 1px solid #000;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 2em;
+}
+
+/*
+
+    display: none <- 존재 자체를 사라지게 함.
+    opacity: 0; 존재 자체는 사라지지만 투명도만 조절함.
+    visibility: hidden; 자기 자리의 크기와 위치는 유지한 채 사라지게 함.
+
+*/
+
+.child1 {
+    background-color: beige;
+    display: none;
+}
+
+.child2 {
+    background-color: antiquewhite;
+}
+
+.child3 {
+    background-color: bisque;
+}
+
+/*
+    위에서 태그 방식으로 지정했으므로 아래에서도 태그 방식을 써야됨
+    그래야 기존 display: inline-block을 없앨 수 있음.
+*/
+.parent div:nth-child(1) {
+    display: none;
+}
+
+/*
+    커서 적용 안 됨
+*/
+.parent div:nth-child(2) {
+    visibility: hidden;
+}
+
+.parent div:nth-child(3) {
+    opacity: 0;
+}
