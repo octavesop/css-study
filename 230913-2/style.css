@@ -14,6 +14,9 @@
     그러므로 inline / inline-block 요소를 중앙 정렬하려면
     text-align:center로 제어할 것.
 
+    모든 요소는 float 속성을 가지면 inline-block으로
+    display 속성이 변경됨.
+
 */
 
 div {

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.display-list {
+    border: 1px solid #000;
+}
+
+.display-list a {
+    display: list-item;
+    list-style-position: inside;
+    /*
+    얘로 적으면 inside가 안 먹음!!
+    list-style: square;
+    */
+    list-style-type: square;
+}
