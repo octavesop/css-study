@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/*
+    user-scalable=no로 하면 사용자가 모바일 환경에서 확대-축소하는 게 불가능!
+
+    overflow: hidden을 쓰면 float으로 인해 잃어버린 높이값도 찾을 수 있다!!
+*/
+
+.about  {
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.inner {
+    border: 1px solid red;
+    width: 1000px;
+    margin: auto;
+}
+
+.inner div {
+    border: 1px solid blue;
+    float: left;
+    width: 50%;
+    height: 480px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        background-color: crimson;
+    }
+
+    .innder {
+        width: 100%;
+    }
+
+    .inner div {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
