@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+
+/* table 내에서만 동작함!! */
+.crew {
+    /* cell-spacing을 없애줌! */
+    border-collapse: collapse;
+    width: 600px;
+    /* table을 4등분해줌 */
+    table-layout: fixed;
+}
+
+
+.crew th {
+    background-color: #222;
+    color: white;
+    text-align: left;
+}
+
+.crew tr {
+    border-bottom: 1px solid #d4d3d3;
+}
+
+.crew tr:last-child {
+    /* 마지막 줄을 없앰!! */
+    border-bottom: none;
+}
+
+
+.crew caption {
+    /* caption의 위치 지정. block 요소. */
+    caption-side: bottom;
+    text-align: right;
+    font-size: 24px;
+}
+
+.crew caption span:first-child {
+    float: left;
+}
+
+.crew caption span:last-child {
+    float: right;
+}
