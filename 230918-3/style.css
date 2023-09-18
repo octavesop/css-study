@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+
+.bdrs-frame {
+    border: 5px solid #000;
+    width: 500px;
+    height: 500px;
+    border-radius: 50px 200px 50px 200px;
+    animation: move 2s 3s linear infinite;
+}
+
+.bdrs-practice div {
+    border: 3px solid crimson;
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+    display: inline-block;
+}
+
+.box1 {
+    border-radius: 30px;
+}
+
+.box2 {
+    border-radius: 100px;
+}
+
+.box3 {
+    border-radius: 100%;
+}
+
+.box4 {
+    border-radius: 100px 0px 100px 0px;
+}
+
+.box5 {
+    border-radius: 100% 0 0 0;
+}
+
+.box6 {
+    border-radius: 100% 100% 100% 0;
+}
+
+.box7 {
+    border-radius: 100% 0 100% 0 ;
+}
+
+.box8 {
+    border-radius: 100% 100% 0 0 ;
+}
+
+.outline-practice {
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    border: 5px solid slateblue;
+    outline: 5px double salmon;
+    border-style: dashed;
+    outline-style: dotted;
+    /* border 안쪽으로 선을 맞춤! */
+    outline-offset: -20px;
+}

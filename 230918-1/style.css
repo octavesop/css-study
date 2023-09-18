@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.margin-padding-frame {
+    border: 1px solid #000;
+}
+
+.item {
+    border: 5px solid red;
+    height: 100px;
+    padding: 30px;
+    /* 더 높은 게 우선시됨. margin-top: 30px과 margin-bottom: 30px이 겹침. */
+    /* 좌우 마진은 겹치지 않음. */
+    margin: 30px;
+    display: inline-block;
+    width: 33.33333%;
+    box-sizing: border-box;
+    margin-right: -5px;
+}
